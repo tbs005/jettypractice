@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import java.util.Arrays;
 
 /**
- * Hello world!
+ * JDK8 新增日期工具类体验
  *
  */
 public class JDK8DateTimeTest {
@@ -15,6 +15,8 @@ public class JDK8DateTimeTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		
 		System.out.println(Arrays.asList("0.0.0.0/0", "aaa"));
 
 		// Get the system clock as UTC offset
