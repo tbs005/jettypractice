@@ -19,6 +19,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- jetty嵌入式开发相关工具类 -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-server</artifactId>
@@ -29,16 +30,24 @@
 			<artifactId>jetty-webapp</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+		<!-- json工具类 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
 		</dependency>
+		<!-- 单元测试工具类 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- 日期工具类，与JDK8中新出现的日期工具类功能相近，可以说后者借鉴了前者 -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 	</dependencies>
 
