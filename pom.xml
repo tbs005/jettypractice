@@ -19,6 +19,24 @@
 	</properties>
 
 	<dependencies>
+		<!-- dubbo  -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>2.5.3</version>
+		</dependency>
+		<!-- Zookeeper -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+		</dependency>
+		<!-- Zookeeper客户端zkClient -->
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
 		<!-- jetty嵌入式开发相关工具类 -->
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
