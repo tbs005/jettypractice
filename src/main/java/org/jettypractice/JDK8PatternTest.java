@@ -1,10 +1,12 @@
 package org.jettypractice;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * Pattern 正则
  * 参考文章地址：http://blog.csdn.net/aerchi/article/details/7440433
+ * 			http://my.oschina.net/u/1187481/blog/215379
  */
 public class JDK8PatternTest {
 
@@ -48,6 +50,13 @@ public class JDK8PatternTest {
 		String [] s3 = p.split(str,-1);
 		for(String tmp:s3){
 			System.out.println(tmp);
+		}
+		System.out.println("-------------------------------------------");
+		
+		Pattern pp=Pattern.compile("\\d+"); 
+		Matcher m=pp.matcher("我的QQ是:456456 我的电话是:0532214 我的邮箱是:aaa123@aaa.com"); 
+		while(m.find()) { 
+		     System.out.println(m.group()); 
 		}
 	}
 
