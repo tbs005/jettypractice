@@ -16,7 +16,13 @@ public class JDK8PatternTest {
 		System.out.println(result);
 		
 		//
-		System.out.println(Pattern.matches("a*b", "aaaaaaaab"));
+		System.out.println(Pattern.matches("^a*b$", "aaaab"));
+		
+		System.out.println(Pattern.matches("^[a-z]*$", "aaeez"));
+		System.out.println(Pattern.matches("^[a-f]*$", "aaaaaaaabf"));
+		System.out.println(Pattern.matches("^[a-f]*$", "aaaaaaaabfg"));
+		
+		
 	}
 
 }
