@@ -5,8 +5,9 @@ import java.util.regex.Pattern;
 
 /**
  * Pattern 正则
- * 参考文章地址：http://blog.csdn.net/aerchi/article/details/7440433
- * 			http://my.oschina.net/u/1187481/blog/215379
+ * 参考文章地址：
+ * http://blog.csdn.net/aerchi/article/details/7440433
+ * http://my.oschina.net/u/1187481/blog/215379
  */
 public class JDK8PatternTest {
 
