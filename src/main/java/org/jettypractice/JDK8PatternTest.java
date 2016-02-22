@@ -21,8 +21,34 @@ public class JDK8PatternTest {
 		System.out.println(Pattern.matches("^[a-z]*$", "aaeez"));
 		System.out.println(Pattern.matches("^[a-f]*$", "aaaaaaaabf"));
 		System.out.println(Pattern.matches("^[a-f]*$", "aaaaaaaabfg"));
+		System.out.println("-------------------------------------------");
 		
+		String regex=",";
+		String str = "one,two,three,four,five";
+		Pattern p = Pattern.compile(regex);
+		String [] s = p.split(str);
+		for (String tmp:s){
+			System.out.println(tmp);
+		}
+		System.out.println("-------------------------------------------");
 		
+		String [] s1 = p.split(str,3);
+		for(String tmp:s1){
+			System.out.println(tmp);
+		}
+		System.out.println("-------------------------------------------");
+		
+		String [] s2 = p.split(str,5);
+//		String [] s2 = p.split(str,6);
+		for(String tmp:s2){
+			System.out.println(tmp);
+		}
+		System.out.println("-------------------------------------------");
+		
+		String [] s3 = p.split(str,-1);
+		for(String tmp:s3){
+			System.out.println(tmp);
+		}
 	}
 
 }
