@@ -11,6 +11,7 @@ package org.jettypractice;
  *  取模的时候如果运算里出现了负数，这个负数只看被模数，或者看%左边，右边正负都不管！
  *  参考文章：
  *  http://my.oschina.net/u/1580996/blog/501960
+ *  http://blog.sina.com.cn/s/blog_6940cab30101hji5.html
  */
 public class JDK8ModTest {
 	public static void main(String[] args) {
