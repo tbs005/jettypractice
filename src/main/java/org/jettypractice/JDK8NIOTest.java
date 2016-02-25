@@ -16,5 +16,8 @@ package org.jettypractice;
  * @date 2016年2月25日上午11:06:27
  */
 public class JDK8NIOTest {
+	public static void main(String[] args) {
+		
+	}
 
 }
