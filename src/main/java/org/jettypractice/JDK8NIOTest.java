@@ -34,7 +34,7 @@ public class JDK8NIOTest {
 		String s= "java nio test.";
 		ByteBuffer buff = ByteBuffer.allocate(1024);
 		buff.put(s.getBytes());
-		buff.flip();//flip方法必须调用，这个方法使缓冲区的状态切换为读或者写read状态。
+		buff.flip();//在将数据读入缓存或者将缓存数据写入channel时，flip方法必须调用，这个方法使缓冲区的状态切换为读或者写read状态。
 		
 		channel.write(buff);
 		
