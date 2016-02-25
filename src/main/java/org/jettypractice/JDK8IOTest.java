@@ -3,6 +3,7 @@ package org.jettypractice;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.channels.FileChannel;
 
 /**
  * <p>
@@ -29,6 +30,7 @@ public class JDK8IOTest {
 		
 		FileInputStream in = new FileInputStream(file);
 		byte[] bytes = new byte[1024];
+//		FileChannel channel = in.getChannel();
 		in.read(bytes);
 		in.close();
 
